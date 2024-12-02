@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": [
+            "es5",
+            "dom"
+        ],
+        "types": [
+            "cypress",
+            "node",
+            "@testing-library/cypress",
+            "@bahmutov/cy-grep",
+            "../node_modules/cypress",
+        ],
+        "baseUrl": "./",
+        "allowJs": false,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "**/*.ts",
+        "**/index.ts", "support/index.js",
+    ],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    }
+}

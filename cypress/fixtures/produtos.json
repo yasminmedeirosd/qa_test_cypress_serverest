@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "Teclado Mecânico Keychron K8",
+        "preco": 680,
+        "descricao": "Teclado mecânico sem fio com iluminação RGB",
+        "quantidade": 500
+    },
+    {
+        "nome": "Fone Sony WH-1000XM5",
+        "preco": 1900,
+        "descricao": "Fone de ouvido com cancelamento de ruído ativo",
+        "quantidade": 1200
+    },
+    {
+        "nome": "Kindle Paperwhite 8GB",
+        "preco": 550,
+        "descricao": "Leitor de e-books com iluminação ajustável",
+        "quantidade": 800
+    },
+    {
+        "nome": "Cadeira Gamer DXRacer",
+        "preco": 1400,
+        "descricao": "Cadeira ergonômica para jogos com suporte lombar",
+        "quantidade": 350
+    },
+    {
+        "nome": "Notebook ASUS VivoBook",
+        "preco": 3200,
+        "descricao": "Notebook com processador Intel Core i7 e 16GB RAM",
+        "quantidade": 250
+    }
+]

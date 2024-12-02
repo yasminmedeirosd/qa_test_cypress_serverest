@@ -1,0 +1,39 @@
+{
+  "name": "qa_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:open": "cypress open",
+    "test:api": "cypress run --env grepTags=@api+-@e2e,grepOmitFiltered=true,grepFilterSpecs=true",
+    "test:e2e": "cypress run --env grepTags=@e2e+-@api,grepOmitFiltered=true,grepFilterSpecs=true",
+    "clear": "rm -r cypress/videos/* cypress/downloads/* screenshots/* cypress/reports/* || true",
+    "list:spec:names": "npx find-cypress-specs --names",
+    "count:by:tags": "npx find-cypress-specs --tags",
+    "tags:login": "cypress run --spec cypress/e2e/specs/login.cy.ts --env grepTags=@login",
+    "tags:produtos": "cypress run --spec cypress/e2e/specs/produtos.cy.ts --env grepTags=@produtos"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cy-grep": "^1.11.6",
+    "@testing-library/cypress": "^10.0.2",
+    "@types/mochawesome": "^6.2.4",
+    "cypress": "^13.16.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^2.0.4",
+    "faker-br": "^0.4.1",
+    "find-cypress-specs": "^1.46.2",
+    "find-test-names": "^1.28.30",
+    "mocha": "^10.8.2",
+    "mocha-junit-reporter": "^2.2.1",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "ui",
+    "test",
+    "automation"
+  ]
+}
